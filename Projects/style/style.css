@@ -43,6 +43,7 @@
     border: none;
     border-radius: 8px;
     padding: 10px 25px;
+    font-weight: bold;
 }
 .traning-item:hover{
     background-color:blueviolet;
