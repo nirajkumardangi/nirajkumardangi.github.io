@@ -56,7 +56,7 @@
 /* Media Query */
 @media only screen and (min-width: 200px) and (max-width: 767px) {
     .traning-contener{
-        width: 100%;
+        width: 88%;
         flex-direction: column;
     }
     .traning-item{
