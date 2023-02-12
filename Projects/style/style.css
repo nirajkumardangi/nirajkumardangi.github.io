@@ -35,7 +35,7 @@
 }
 .traning-item p{
     font-size: 14px;
-    padding: 20px 0;
+    padding: 20px 5px;
 }
 .traning-item button{
     background-color: blue;
@@ -57,10 +57,13 @@
 /* Media Query */
 @media only screen and (min-width: 200px) and (max-width: 767px) {
     .traning-contener{
-        width: 90%;
+        width: 95%;
         flex-direction: column;
     }
     .traning-item{
         margin: 15px;
+    }
+    .traning-item {
+        Padding: 15px 5px;
     }
 }
