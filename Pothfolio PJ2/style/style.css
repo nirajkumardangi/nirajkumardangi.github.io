@@ -152,11 +152,11 @@ footer ul li a i{
         flex-direction: column;
     }
     .hero-right img{
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
     }
     .hero-left h1{
-        font-size: 20px;
+        font-size: 27px;
         text-align: center;
     }
     .hero-left p{
@@ -165,7 +165,7 @@ footer ul li a i{
         text-align: justify;
     }
     .hero-left p span{
-        font-size: 14px;
+        font-size: 19px;
     }
     footer{
         margin: 20px 5px;
