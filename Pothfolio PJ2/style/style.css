@@ -127,7 +127,7 @@ footer ul li a i{
 @media only screen and (min-width: 200px) and (max-width:700px) {
     body{
         width: 99vw;
-        height: 99vh;
+        height: 95vh;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
