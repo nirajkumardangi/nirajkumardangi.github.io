@@ -117,6 +117,9 @@ footer{
 footer ul{
    display: flex;
 }
+footer ul li {
+    list-style-type: none;
+}
 footer ul li a i{
    text-decoration: none;
    color: none;
