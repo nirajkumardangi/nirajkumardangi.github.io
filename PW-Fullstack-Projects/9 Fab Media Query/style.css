@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+
+
+
+/*========== Media Query ========== */
+
+/* Extra small devices (phones, 425px and down) */
+@media only screen and (max-width: 425px) {
+    body{
+        background-color: blueviolet;
+    }
+    .phones{
+        display: block;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 425px and up) */
+@media only screen and (min-width: 425px) {
+    body{
+        background-color: #800000;
+    }
+    .tablets{
+        display: block;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-color: #00ffff;
+    }
+    .laptops{
+        display: block;
+    }
+
+    .tablets{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    body{
+        background-color: #dda0dd;
+    }
+    .computers{
+        display: block;
+    }
+
+    .laptops{
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (min-width: 1440px) {
+    body{
+        background-color: #800000;
+    }
+
+    .computers{
+        display: none;
+    }
+}
