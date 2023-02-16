@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F0F6FF;
+}
+
+/***** Navbar Section *****/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 70px 60px 70px;
+}
+
+/***** Navbar Logo *****/
+.links ul li img{
+    width: 60%;
+    cursor: pointer;
+}
+
+/***** Navbar Links *****/
+.links ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.links ul li{
+    list-style-type: none;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.links ul li a:hover{
+    color: #5955B3;
+    border-bottom: 2px solid #5955B3;
+}
+
+/***** Navbar Button *****/
+.button button{
+    background-color:#5955B3;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    /* letter-spacing: 0.02rem; */
+    border: none;
+    border-radius: 7px;
+}
+
+.button button:hover{
+    color: #5955B3;
+    border: 2px solid #5955B3;
+    background-color: #fff;
+    cursor: pointer;            
+}
+
+/***** Hero Section *****/
+main{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    margin: 0 70px;
+}
+
+/***** Hero Left *****/
+.hero-left h1{
+    color: #3C2E60;
+    font-weight: 700;
+    line-height: 65px;
+    font-size: 55px;
+}
+
+.hero-left h1 span{
+    color: #5955B3;
+}
+
+.hero-left p{
+    font-size: 14px;
+    font-weight: 500;
+    color:rgb(92, 102, 111);
+    margin: 20px 2px;
+}
+
+.hero-left button{
+    background-color:#5955B3;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 600;
+    /* letter-spacing: 0.02rem; */
+    border: none;
+    border-radius: 7px;
+    margin-top: 25px;
+}
+
+.hero-left button:hover{
+    color: #5955B3;
+    border: 2px solid #5955B3;
+    background-color: #fff;
+    cursor: pointer;  
+}
+
+/***** Hero Right *****/
+.hero-right img{
+    width: 100%;
+    padding-left: 100px;
+}
