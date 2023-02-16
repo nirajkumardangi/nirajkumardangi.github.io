@@ -11,7 +11,7 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-image: url("https://img.freepik.com/free-vector/clock-tower-river-glowing-city_1441-3155.jpg?w=1060&t=st=1676556913~exp=1676557513~hmac=eae2adf95df53eee41554edf8dbf238b3e40ef797d9d87b18fb118d07dc6c376");
+    background-image: url('https://img.freepik.com/free-vector/clock-tower-river-glowing-city_1441-3155.jpg?w=1060&t=st=1676556913~exp=1676557513~hmac=eae2adf95df53eee41554edf8dbf238b3e40ef797d9d87b18fb118d07dc6c376');
     background-size: cover;
     /* background-repeat: no-repeat; */
 }
