@@ -168,7 +168,10 @@ footer{
         margin: 0px 0.5%;
         gap: 15px;
     }
-
+    
+     section{
+        margin: 15px 10px;
+    }
     main h2{
         font-size: 28px;
         margin-bottom: 20px;
