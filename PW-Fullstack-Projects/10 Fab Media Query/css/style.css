@@ -138,14 +138,7 @@ footer{
     }
 
     nav{
-        display: flex;
-        align-items: center;
         flex-direction: column;
-    }
-
-    .header ul{
-        flex-direction: column;
-        text-align: center;
     }
 
     section{
