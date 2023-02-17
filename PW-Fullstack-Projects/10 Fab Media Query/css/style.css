@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #111827;
+    color: #fff;
+}
+
+
+/* Header Navbar Section*/
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    justify-content: end;
+}
+
+.header{
+    margin: 10px 10%;
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 10px;
+    background-color: #000;
+}
+
+.header ul li{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #000;
+}
+
+.header ul li:hover{
+    background-color: rgb(100, 100, 224);
+    cursor: pointer;
+}
+
+/* Header Image section */
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20%;
+}
+
+.header-left h1{
+    font-size: 40px;
+}
+
+.header-left h2{
+    font-size: 18px;
+    color: #99b524;
+}
+
+.header-right img{
+    width: 35vw;
+    cursor: pointer;
+}
+/* Hero main Section */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px ;
+}
+
+.main-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 20%;
+    gap: 15px;
+}
+
+main h2{
+    border-bottom: 3px solid #0000ff;
+}
+
+.main-image img{
+    width: 23vw;
+}
+
+figure{
+    cursor: pointer;
+}
+
+figcaption{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+figcaption:hover{
+    color: #99b524;
+    border-bottom: 2px solid #99b524;
+}
+
+/* Footer Section */
+footer{
+    margin: 0px 20% 3% 20%;
+}
+
+.contact h2 {
+    text-decoration: underline 3px #0000ff;
+    text-align: center;
+
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon img{
+    width: 4%;
+    cursor: pointer;
+}
+
+.icon img:nth-child(3){
+    width: 6%;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        width: 100%;
+        margin: 0 0;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+   
+    .header-left{
+        margin: 15px 0;
+    }
+
+    .header-left h1{
+        font-size: 30px;
+        
+    }
+    .header-right img{
+        width: 75vw;
+        cursor: pointer;
+    }
+
+    .main-image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0.5%;
+        gap: 15px;
+    }
+
+    main h2{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .main-image img{
+        width: 75vw;
+    }
+
+    .icon{
+        gap: 10px;
+    }
+    
+    .icon img{
+        width: 10%;
+        margin-top: 10px;
+    }
+    
+    .icon img:nth-child(3){
+        width: 15%;
+        margin-left: -5px;
+    }
+}
