@@ -138,14 +138,7 @@ footer{
     }
 
     nav{
-        display: flex;
-        align-items: center;
         flex-direction: column;
-    }
-
-    .header ul{
-        flex-direction: column;
-        text-align: center;
     }
 
     section{
@@ -175,7 +168,10 @@ footer{
         margin: 0px 0.5%;
         gap: 15px;
     }
-
+    
+     section{
+        margin: 15px 10px;
+    }
     main h2{
         font-size: 28px;
         margin-bottom: 20px;
