@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    max-width: 1440px;
+    background-color: #f0f4f5;
+}
+
+/* Utility */
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+a:hover{
+    color: #20bc7e;
+}
+
+/*====== Navbar ======*/
+nav{
+    justify-content: space-between;
+    margin: 20px 6%;
+}
+
+.navbar-logo img{
+    width: 80%;
+    cursor: pointer;
+}
+
+.navbar-menu{
+    gap: 50px;
+}
+
+a:first-child{
+    color: #20bc7e;
+}
+
+
+/*====== Header Features Section ======*/
+section{
+    justify-content: space-between;
+    margin: 3% 0 0 6%;
+    background-image: url(/photo/stethoscope.png);
+    background-position: 28%;
+    background-repeat: no-repeat;
+    background-size: 505px;
+}
+
+
+/* header feature left */
+.header-feature-left{
+    max-width: 51%;
+}
+
+button{
+    background-color: #20bc7e;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #ffa500;
+}
+
+.down-button-img{
+    justify-content: space-between;
+    margin-right: 135px;
+    align-items: flex-start;
+}
+
+/* header feature right */
+img{
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+h1{
+    font-size: 58px;
+}
+
+p{
+    color: #767575;
+    padding: 20px 118px 20px 0;
+}
+
+.green-img{
+    width: 400px;
+    position: absolute;
+    top: 27%;
+    right: 2%;
+}
+
+.yellow-img{
+    width: 350px;
+    position: absolute;
+    top: 34%;
+    right: 0%;
+}
+
+.doctor-img{
+    width: 410px;
+    position: absolute;
+    top: 13%;
+    right: 1%;
+}
+
+.mouse-button{
+    position: relative;
+    left: 50%;
+}
