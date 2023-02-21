@@ -67,7 +67,7 @@ h5{
 /*====== Header Background Image ======*/
 .header-bg-image{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/photo/mainBackground.png");
+    url('./photo/mainBackground.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 150vh;
