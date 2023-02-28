@@ -217,7 +217,7 @@ hr{
 .features-sec-first-left{
     width: 601px;
     height: 470px;
-    background-image: url(/icon/featureImageBg1.png);
+    background-image: url('./icon/featureImageBg1.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -250,7 +250,7 @@ hr{
 .features-sec-second-right{
     width: 793px;
     height: 506px;
-    background-image: url(/icon/featureImageBg2.png);
+    background-image: url('./icon/featureImageBg2.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
