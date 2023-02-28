@@ -211,6 +211,7 @@ hr{
     justify-content: space-between;
     flex-direction: row;
     gap: 70px;  
+    align-items: flex-start;
 }
 
 .features-sec-first-left{
@@ -243,6 +244,7 @@ hr{
     justify-content: space-between;
     flex-direction: row;
     margin-top: 120px;
+    align-items: flex-start;
 }
 
 .features-sec-second-right{
