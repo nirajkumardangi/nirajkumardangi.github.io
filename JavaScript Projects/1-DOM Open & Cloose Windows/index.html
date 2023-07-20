@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event: Open, focus & blur</title>
+</head>
+
+<body>
+    <!-- Focus & Blur -->
+    <button type="button" id="openbtn">Open Windows</button>
+    <button type="button" id="focusbtn">Focus</button>
+    <button type="button" id="blurbtn">Blur</button>
+
+    <!-- ******************************************** -->
+
+    <form id="form" onsubmit="submitFun()">
+        <p>fName: </p>
+        <input type="text" id="fname">
+        <p>lName: </p>
+        <input type="text" id="lname">
+        <p>Class: </p>
+        <input type="text" id="class1">
+        <br><br>
+        <input type="text" id="input1">
+        <input type="submit">
+    </form>
+
+    <script>
+        // >>- Focus & Blur
+        var newWindows;
+        function NewWin() {
+            newWindows = window.open("", "_blank", "width=300, height=200");
+        }
+        function FocusWin() {
+            newWindows.focus();
+        }
+        function BlurWin() {
+            newWindows.blur();
+        }
+
+        document.getElementById("openbtn").addEventListener("click", NewWin);
+        document.getElementById("focusbtn").addEventListener("click", FocusWin);
+        document.getElementById("blurbtn").addEventListener("click", BlurWin);
+
+        //  **************************************************************************
+
+        document.getElementById("fname").addEventListener("focus", FocusFun);
+        document.getElementById("fname").addEventListener("blur", BlurFun);
+        document.getElementById("lname").addEventListener("focus", FocusFun);
+        document.getElementById("lname").addEventListener("blur", BlurFun);
+        document.getElementById("class1").addEventListener("focus", FocusFun);
+        document.getElementById("class1").addEventListener("blur", BlurFun);
+
+        document.getElementById("fname").addEventListener("input", input1);
+        function input1() {
+            var x = this.value;
+            document.getElementById("input1").value = x;
+        }
+
+
+        function FocusFun() {
+            this.style.background = "green";
+        }
+        function BlurFun() {
+            this.style.background = "";
+        }
+
+        // **********************************************
+        function submitFun(){
+            var x = document.getElementById("fname").value;
+            alert("Namaste, Mrs "+ x);
+        }
+
+
+
+    </script>
+</body>
+
+</html>
