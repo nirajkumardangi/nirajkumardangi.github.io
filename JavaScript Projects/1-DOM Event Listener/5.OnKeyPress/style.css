@@ -1,0 +1,17 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#main{
+    margin: 200px auto;
+    width: 400px;
+    height: 80px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#button{
+    margin: 30px auto;
+    font-weight: bold;
+}
