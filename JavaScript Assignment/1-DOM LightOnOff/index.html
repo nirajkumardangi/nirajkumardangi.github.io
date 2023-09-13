@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light On Off DOM Projects</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+        }
+
+        .center {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            height: auto;
+            max-width: 250px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: green;
+            color: #000;
+            margin: 0 auto;
+            display: block;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./assets/lightoff.jpg" alt="lightOff" class="center" id="bulb">
+    <button id="toggleBtn" type="button">Light On</button>
+
+    <!-- javascript -->
+    <script>
+        let btn = document.querySelector('#toggleBtn');
+        let bulb = document.querySelector('#bulb');
+
+        btn.addEventListener('click', toggleBulb);
+
+        function toggleBulb(e){
+            if(btn.textContent.includes('On')){
+                bulb.src = "./assets/lighton.jpg";
+                btn.textContent = "Turn Off";
+            } else{
+                bulb.src = "./assets/lightoff.jpg";
+                btn.textContent = "Turn On";
+            }
+        }
+    </script>
+</body>
+</html>
