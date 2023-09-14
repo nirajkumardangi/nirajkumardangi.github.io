@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Friend</title>
+    <style>
+        body {
+            background-color: #6a2733dc;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        .container {
+            background-color: #fff;
+            width: 270px;
+            height: auto;
+            margin: 15vh auto;
+            border-radius: 10px;
+            padding: 10px 10px 20px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.613);
+        }
+
+        .image {
+            display: block;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .name {
+            text-align: center;
+            /* margin-top: 0px; */
+        }
+
+        .requestContainer {
+            text-align: center;
+        }
+
+        .requestContainer button {
+            padding: 12px 22px;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn1 {
+            margin-right: 10px;
+            background-color: #0a9503;
+        }
+
+        .btn1:hover {
+            box-shadow: 3px 3px 20px green;
+        }
+
+        .btn2 {
+            display: none;
+            background-color: crimson;
+        }
+
+        .btn2:hover {
+            box-shadow: 3px 3px 20px #3711186c;
+        }
+
+        .notFriend {
+            font-size: 14px;
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1516575150278-77136aed6920?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="image" class="image">
+        <h2 class="name">Miss Priya</h2>
+        <h3 class="notFriend">Not Friend</h3>
+        <div class="requestContainer">
+            <button class="btn1" type="button">Add Friend</button>
+            <button class="btn2" type="button">Remove</button>
+        </div>
+    </div>
+
+    <script>
+        const friendStatus = document.querySelector('.notFriend');
+        const addFriend = document.querySelector('.btn1');
+        const removeFriend = document.querySelector('.btn2');
+        const bgc = document.querySelector('body'); 
+
+        addFriend.addEventListener('click', function(){
+            friendStatus.innerText = "Your Are Friends"
+            removeFriend.style.display = 'inline';
+            addFriend.style.display = 'none';
+        })
+
+        removeFriend.addEventListener('click', function(){
+            friendStatus.innerText = "Not Friends"
+            removeFriend.style.display = 'none';
+            addFriend.style.display = 'inline';
+        })
+    </script>
+</body>
+
+</html>
