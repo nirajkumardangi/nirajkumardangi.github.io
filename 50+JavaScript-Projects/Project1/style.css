@@ -23,6 +23,7 @@
 }
 
 .btn:hover{
+    border-radius: 10px;
     background-color: green;
     transition: 0.2s ease;
     box-shadow: 3px 3px 20px green;
