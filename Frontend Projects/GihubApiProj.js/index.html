@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h2>Github User Finder</h2>
+    <div id="search">
+        <label for="searchbox">Enter User ID </label>
+        <div id="searchboxbtn">
+            <input type="text" name="search" id="searchbox" placeholder="ex- nirakr" required>
+        <button id="searchBtn">Search</button>
+        </div>
+        <span style="color: red;" id="errorId"></span>
+    </div>
+    <main id="main">
+        <img alt="user avatar image" id="avatar">
+        <b id="name"></b>
+        <p id="loginId"></p>
+        <p id="bio"></p>
+        <div id="followersFollowing">&#128101;
+            <div id="followers"></div>
+            <div id="following"></div>
+        </div>
+        <div id="mail"></div>
+        <div id="location"></div>
+        <button id="profileBtn"><a id="profileLink" >Go to profile</a></button>
+    </main>
+    
+    <script src="scripe.js"></script>
+</body>
+</html>
